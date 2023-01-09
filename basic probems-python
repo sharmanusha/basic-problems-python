@@ -1,0 +1,83 @@
+#basic problems in pyhton:
+# check even odd
+num=int(input("Enter a number: " ))
+if (num%2)==0:
+    print(num, 'is even')
+else:
+    print(num, 'is odd')
+
+output:
+Enter a number: 6
+6 is even
+----------------------------------------------------------------------------------------------------------------------------------
+#check positive negative or 0
+num=float(input("Enter a number: "))
+if num>0:
+    print("positive number")
+elif num==0:
+    print("zero")
+else:
+    print("negative number")
+    
+output:
+Enter a number: 7
+positive number
+Enter a number: 0
+zero
+Enter a number: -7
+negative number
+----------------------------------------------------------------------------------------------------------------------------------------
+#factorial of a number
+num=int(input("Enter a number: "))
+factorial=1
+if num<0:
+   print("sorry, factorial doesn't exist for negative number ")
+elif num==0:
+    print("factorial of 0 is 1")
+else:
+   for i in range(1,num+1):
+        factorial=factorial*i
+print("the factorial of" ,num, "is", factorial)
+
+output:
+Enter a number: 8
+the factorial of 8 is 40320
+Enter a number: 0
+factorial of 0 is 1
+Enter a number: -1
+sorry, factorial doesn't exist for negative number 
+the factorial of -1 is 1
+--------------------------------------------------------------------------------------------------------------------------------------------
+#reversing a number
+num=int(input("Enter a number: "))
+rev=0
+while(num>0):
+    dig=num%10
+    rev=rev*10+dig
+    num=num//10
+print("Reverse of the number:",rev)
+
+output:
+Enter a number: 678
+Reverse of the number: 876
+--------------------------------------------------------------------------------------------------------------------------------------------------
+#check if number is palindrome
+n=int(input("Enter a number: "))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if (temp==rev):
+    print("the number is palindrome")
+else:
+    print("the number is not palindrome")
+  
+output:
+Enter a number: 7
+the number is palindrome
+Enter a number: -9
+the number is not palindrome
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
